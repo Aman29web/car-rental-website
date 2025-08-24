@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
-import { assets, dummyCarData, ownerMenuLinks } from '../../assets/assets'
+import { assets, dummyUserData, ownerMenuLinks } from '../../assets/assets'
 import { NavLink, useLocation } from 'react-router-dom';
+import img1 from '../../assets/car_image1.png'
 
 const Sidebar = () => {
 
    
-  const user =dummyCarData;
+  const user =dummyUserData;
   const loaction = useLocation()
   const [image,setImage] = useState('')
 
@@ -18,8 +19,8 @@ const Sidebar = () => {
     <div className='relative min-h-screen md:flex flex-col items-center pt-8 max-w-13 md:max-w-60 w-full border-r border-borderColor text-sm'>
       <div className='group relative'>
        <label htmlFor="image">
-        <img src={image ? URL.createObjectURL(image) : user?.image || "https://unsplash.com/photos/programming-code-abstract-technology-background-of-software-developer-and-computer-script-ltpb_WinC3Y"} alt="" />
-       <input type="file" id='image' accept='image/*' hidden onChange={e=> setImage(e.target[0])} />
+        <img src={image ? URL.createObjectURL(image) : user?.image || img1} alt="" className='h-9 md:h-14 w-9 md:w-14 rounded-full mx-auto'/>
+       <input type="file" id='image' accept='image/*' hidden onChange={e=> setImage(e.target.files[0])} />
        <div className='absolute hidden top-0 right-0 left-0 bottom-0 bg-black/10 rounded-full group-hover:flex items-center justify-center cursor-pointer'>
         <img src={assets.edit_icon} alt="" />
        </div>
