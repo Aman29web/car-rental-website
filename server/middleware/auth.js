@@ -5,7 +5,7 @@ import User from "../models/User.js";
 export const protect = async (req, res, next)=>{
     const token = req.headers.authorization;
     if(!token){
-        return res.json({success: false, message: "not autoorzed"})
+        return res.json({success: false, message: "not autoorzedd"})
     }
     try{
         const userId = jwt.decode(token, process.env.JWT_SECRET)
