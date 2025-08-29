@@ -1,21 +1,32 @@
 import jwt from "jsonwebtoken"
-import User from "../models/User.js";
+import User from "../models/User.js"
 
+export const protect = async (req, res, next) => {
+  let token = req.headers.authorization
 
-export const protect = async (req, res, next)=>{
-    const token = req.headers.authorization;
-    if(!token){
-        return res.json({success: false, message: "not autoorzedd"})
+  if (!token) {
+    return res.json({ success: false, message: "Not authorized, no token" })
+  }
+
+  try {
+    // If header starts with Bearer, split it
+    if (token.startsWith("Bearer ")) {
+      token = token.split(" ")[1]
     }
-    try{
-        const userId = jwt.decode(token, process.env.JWT_SECRET)
-        if(!userId){
-             return res.json({success: false, message: "not autoorzed"})
-        }
-      req.user = await User.findById(userId).select("-password")
-        next();
-    } catch (error){
-        return res.json({success: false, message: "not authorized"})
 
+    // Verify token properly
+    const decoded = jwt.verify(token, process.env.JWT_SECRET)
+
+    if (!decoded) {
+      return res.json({ success: false, message: "Not authorized, invalid token" })
     }
+
+    // Attach user to request (decoded contains the payload you signed)
+    req.user = await User.findById(decoded).select("-password")
+
+    next()
+  } catch (error) {
+    console.log(error.message)
+    return res.json({ success: false, message: "Not authorized, token failed" })
+  }
 }

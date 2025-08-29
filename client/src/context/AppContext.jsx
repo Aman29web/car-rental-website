@@ -42,6 +42,7 @@ export const AppProvider = ({ children})=>{
         try{
           const {data} =  await axios.get('/api/user/cars')
           data.success ? setCars(data.cars) : toast.error(data.message)
+          
 
         } catch (error){
             toast.error(error.message)
@@ -58,21 +59,16 @@ export const AppProvider = ({ children})=>{
         toast.success('You have been logged out')
     }
 
-    // USe effect to retrive the token from localStoarge
-    useEffect(()=>{
-        const token = localStorage.getItem('token')
-        setToken(token)
-        fetchCars()
-    },[])
+ useEffect(() => {
+  const token = localStorage.getItem("token")
+  if (token) {
+    setToken(token)
+    axios.defaults.headers.common["Authorization"] = `Bearer ${token}`  // ✅ Add Bearer
+    fetchUser()
+    fetchCars()
+  }
+}, [])
 
-    // UseEffect to fetch user data when token is abvailabe
-
-    useEffect(()=>{
-        if(token){
-            axios.defaults.headers.common['Authorization'] = `${token}`
-            fetchUser()
-        }
-    },[token])
 
 
 
