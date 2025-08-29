@@ -59,15 +59,18 @@ export const AppProvider = ({ children})=>{
         toast.success('You have been logged out')
     }
 
- useEffect(() => {
+useEffect(() => {
   const token = localStorage.getItem("token")
   if (token) {
     setToken(token)
-    axios.defaults.headers.common["Authorization"] = `Bearer ${token}`  // ✅ Add Bearer
+    axios.defaults.headers.common["Authorization"] = `Bearer ${token}`
     fetchUser()
-    fetchCars()
   }
+  fetchCars()   // 👈 always run, even without login
 }, [])
+
+
+
 
 
 
