@@ -41,7 +41,7 @@ import car_image2 from "./car_image2.png"
 import car_image3 from "./car_image3.png"
 import car_image4 from "./car_image4.png"
 
-export const cityList = ['New York', 'Los Angeles', 'Houston', 'Chicago']
+export const cityList = ['Varanasi', 'New Delhi', 'Chandigarh', 'Mumbai']
 
 export const assets = {
     logo,
@@ -139,7 +139,7 @@ export const dummyCarData = [
         "fuel_type": "Diesel",
         "transmission": "Manual",
         "pricePerDay": 130,
-        "location": "Chicago",
+        "location": "Mumbai",
         "description": "The Toyota Corolla is a mid-size luxury sedan produced by Toyota. The Corolla made its debut in 2008 as the first sedan ever produced by Toyota.",
         "isAvaliable": true,
         "createdAt": "2025-04-16T08:33:57.993Z",
