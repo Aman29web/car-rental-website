@@ -26,34 +26,32 @@ Built with **MERN stack**, featuring authentication, dashboards, and seamless bo
 
 ---
 
-## 📂 Project Structure
+## 📂 Folder Structure
 
+```bash
 CAR-RENTAL/
-├── client/ # Frontend (React + Vite + Tailwind CSS)
-│ ├── public/ # Static assets
-│ ├── src/
-│ │ ├── assets/ # Images, icons, static resources
-│ │ ├── components/ # Reusable UI components
-│ │ ├── context/ # Global state management (AppContext)
-│ │ ├── pages/ # Application pages (Login, Dashboard, etc.)
-│ │ ├── App.jsx # Root component
-│ │ ├── main.jsx # Entry point
-│ │ └── index.css # Global styles
-│ ├── package.json
-│ └── vite.config.js
+├── client/                  # Frontend (React + Vite + Tailwind CSS)
+│   ├── public/              # Static assets
+│   ├── src/                 
+│   │   ├── assets/          # Images, icons, static resources
+│   │   ├── components/      # Reusable UI components
+│   │   ├── context/         # Global state management (AppContext)
+│   │   ├── pages/           # Application pages (Login, Dashboard, etc.)
+│   │   ├── App.jsx          # Root component
+│   │   ├── main.jsx         # Entry point
+│   │   └── index.css        # Global styles
+│   ├── package.json
+│   └── vite.config.js
 
-├── server/ # Backend (Node.js + Express + MongoDB)
-│ ├── configs/ # Database & service configurations
-│ ├── controllers/ # Request handlers (business logic)
-│ ├── middleware/ # Custom middleware (auth, validation, etc.)
-│ ├── models/ # Mongoose schemas & models
-│ ├── routes/ # API routes
-│ ├── server.js # Entry point of backend
-│ ├── package.json
-│ └── vercel.json # Deployment configuration
-
-├── README.md
-└── vercel.json # Deployment config for the root project
+├── server/                  # Backend (Node.js + Express + MongoDB)
+│   ├── configs/             # Database & service configurations
+│   ├── controllers/         # Request handlers (business logic)
+│   ├── middleware/          # Custom middleware (auth, validation, etc.)
+│   ├── models/              # Mongoose schemas & models
+│   ├── routes/              # API routes
+│   ├── server.js            # Entry point of backend
+│   ├── package.json
+│   └── vercel.json          # Deployment configuratio
 
 
 ---
