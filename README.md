@@ -52,7 +52,7 @@ CAR-RENTAL/
 │   ├── server.js            # Entry point of backend
 │   ├── package.json
 │   └── vercel.json          # Deployment configuratio
-
+```
 
 ---
 
