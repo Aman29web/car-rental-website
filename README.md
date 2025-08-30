@@ -27,3 +27,31 @@ Built with **MERN stack**, featuring authentication, dashboards, and seamless bo
 ---
 
 ## 📂 Project Structure
+
+
+---
+
+## 🚀 Demo
+🔗 [Live Website](https://dummy-link.com)  
+📹 [Demo Video](https://dummy-link.com)
+
+---
+
+## 📸 Screenshots
+![Screenshot 1](https://dummy-link.com/screenshot1.png)  
+![Screenshot 2](https://dummy-link.com/screenshot2.png)  
+
+---
+
+## 👨‍💻 Author
+- **Aman Singh**  
+🔗 [Portfolio](https://dummy-portfolio.com)  
+🔗 [LinkedIn](https://www.linkedin.com/in/aman-singh-mern?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)  
+🔗 [GitHub](https://github.com/your-github)  
+
+---
+
+## 📜 License
+This project is licensed under the **MIT License** – feel free to use and modify.
+
+
