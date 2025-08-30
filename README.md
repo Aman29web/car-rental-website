@@ -58,15 +58,9 @@ CAR-RENTAL/
 
 ## 🚀 Demo
 🔗 [Live Website](https://dummy-link.com)  
-📹 [Demo Video](https://dummy-link.com)
 
 ---
 
-## 📸 Screenshots
-![Screenshot 1](https://dummy-link.com/screenshot1.png)  
-![Screenshot 2](https://dummy-link.com/screenshot2.png)  
-
----
 
 ## 👨‍💻 Author
 - **Aman Singh**  
