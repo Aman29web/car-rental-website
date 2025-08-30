@@ -1,6 +1,6 @@
 # car-rental-website
 
-# 🚗 CarRental Website
+#  CarRental Website
 
 A full-stack **Car Rental Platform** where users can rent cars and owners can list their cars for rent.  
 Built with **MERN stack**, featuring authentication, dashboards, and seamless booking management.
@@ -56,13 +56,13 @@ CAR-RENTAL/
 
 ---
 
-## 🚀 Demo
+##  Demo
 🔗 [Live Website](https://dummy-link.com)  
 
 ---
 
 
-## 👨‍💻 Author
+##  Author
 - **Aman Singh**  
 🔗 [Portfolio](https://dummy-portfolio.com)  
 🔗 [LinkedIn](https://www.linkedin.com/in/aman-singh-mern?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)  
